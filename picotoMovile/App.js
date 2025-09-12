@@ -1,20 +1,17 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-
+import { StyleSheet, Image, Button, Text, View } from 'react-native';
+import "./style.css"
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View id='holitas'>
+      <Image
+        source={{ uri: "https://stock.adobe.com/search/images?k=nes" }}
+        style={{ width: 50, height: 50, marginTop: 20 }}
+      />
+      <Button title="Presioname" 
+        onPress={() => alert("¡Hola!")}
+        color="orange">
+      </Button>
+     <Text style={{ color:"red", fontSize: "30px"}}> quien tu misterioso amor, tu gran ocupacion, tu misterioso alguieennnn</Text>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
